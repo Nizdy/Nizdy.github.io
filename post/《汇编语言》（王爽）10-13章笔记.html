@@ -21,18 +21,21 @@
     var CONFIG = {"hostname":"nizdy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="(눈_눈)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nizdy&#39;s Blog">
-<meta property="og:url" content="https://nizdy.github.io/archives/index.html">
+  <meta name="description" content="十、标志寄存器 1、标志寄存器CPU内部的寄存器中，有一种特殊的寄存器（对于不同的处理机，个数和结构都可能不同）具有以下3种作用。 （1）用来存储相关指令的某些执行结果； （2）用来为CPU执行相关指令提供行为依据； （3）用来控制CPU的相关工作方式。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《汇编语言》(王爽)10-13章笔记">
+<meta property="og:url" content="https://nizdy.github.io/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%8910-13%E7%AB%A0%E7%AC%94%E8%AE%B0.html">
 <meta property="og:site_name" content="Nizdy&#39;s Blog">
-<meta property="og:description" content="(눈_눈)">
+<meta property="og:description" content="十、标志寄存器 1、标志寄存器CPU内部的寄存器中，有一种特殊的寄存器（对于不同的处理机，个数和结构都可能不同）具有以下3种作用。 （1）用来存储相关指令的某些执行结果； （2）用来为CPU执行相关指令提供行为依据； （3）用来控制CPU的相关工作方式。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-15T12:10:09.000Z">
+<meta property="article:modified_time" content="2021-06-27T05:05:54.501Z">
 <meta property="article:author" content="Nizdy">
-<meta property="article:tag" content="Blog, Notes, Nizdy">
+<meta property="article:tag" content="汇编语言">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://nizdy.github.io/archives/">
+<link rel="canonical" href="https://nizdy.github.io/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%8910-13%E7%AB%A0%E7%AC%94%E8%AE%B0.html">
 
 
 <script id="page-configurations">
@@ -40,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Nizdy's Blog</title>
+  <title>《汇编语言》(王爽)10-13章笔记 | Nizdy's Blog</title>
   
 
 
@@ -159,216 +162,39 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 9 篇日志。 继续努力。</span>
-      </div>
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw==">
+<script type="text/javascript">
+   window.livereOptions = {
+       refer: 'mcxu233.com' + location.pathname
+   };
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+       if (typeof LivereTower === 'function') { return; }
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-24T19:10:09+08:00"
-              content="2021-06-24">
-          06-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-3.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (3)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-19T19:10:09+08:00"
-              content="2021-06-19">
-          06-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E3%80%8B%E7%AC%AC1%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《深入理解计算机系统》第1章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-2.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (2)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-1.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (1)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T20:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%8910-13%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)10-13章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T19:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%207-9%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)7-9章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%204-6%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)4-6章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%891-3%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)1-3章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-13T11:50:04+08:00"
-              content="2021-06-13">
-          06-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/hello-world.html" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
-  </div>
-  
-  
-  
-
-  
-
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -415,6 +241,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E3%80%81%E6%A0%87%E5%BF%97%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">十、标志寄存器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%A0%87%E5%BF%97%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1、标志寄存器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E9%9B%B6%E6%A0%87%E5%BF%97%E4%BD%8D-ZF"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、零标志位 (ZF)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%A5%87%E5%81%B6%E6%A0%87%E5%BF%97%E4%BD%8D-PF"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、奇偶标志位 (PF)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%BF%97%E4%BD%8D-SF"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、符号标志位(SF)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%BF%9B%E4%BD%8D%E6%A0%87%E5%BF%97%E4%BD%8D-CF"><span class="nav-number">1.1.4.</span> <span class="nav-text">3、进位标志位(CF)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%BA%A2%E5%87%BA%E6%A0%87%E5%BF%97%E4%BD%8D-OF"><span class="nav-number">1.1.5.</span> <span class="nav-text">4、溢出标志位(OF)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81adc%E6%8C%87%E4%BB%A4%E5%92%8Csbb%E6%8C%87%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">2、adc指令和sbb指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81cmp%E6%8C%87%E4%BB%A4"><span class="nav-number">1.3.</span> <span class="nav-text">3、cmp指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E6%A3%80%E6%B5%8B%E6%AF%94%E8%BE%83%E7%BB%93%E6%9E%9C%E7%9A%84%E6%9D%A1%E4%BB%B6%E8%BD%AC%E7%A7%BB%E6%8C%87%E4%BB%A4"><span class="nav-number">1.4.</span> <span class="nav-text">4、检测比较结果的条件转移指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81DF%E6%A0%87%E5%BF%97%E5%92%8C%E4%B8%B2%E4%BC%A0%E9%80%81%E6%8C%87%E4%BB%A4"><span class="nav-number">1.5.</span> <span class="nav-text">5、DF标志和串传送指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81pushf%E5%92%8Cpopf"><span class="nav-number">1.6.</span> <span class="nav-text">6、pushf和popf</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E5%86%85%E4%B8%AD%E6%96%AD"><span class="nav-number">2.</span> <span class="nav-text">十一、内中断</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E5%86%85%E4%B8%AD%E6%96%AD%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="nav-number">2.1.</span> <span class="nav-text">1、内中断的产生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F%E3%80%81%E4%B8%AD%E6%96%AD%E5%90%91%E9%87%8F%E8%A1%A8%E3%80%81%E4%B8%AD%E6%96%AD%E8%BF%87%E7%A8%8B"><span class="nav-number">2.2.</span> <span class="nav-text">2、中断处理程序、中断向量表、中断过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81iret%E6%8C%87%E4%BB%A4"><span class="nav-number">2.3.</span> <span class="nav-text">3、iret指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E9%99%A4%E6%B3%95%E9%94%99%E8%AF%AF%E4%B8%AD%E6%96%AD%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-number">2.4.</span> <span class="nav-text">4、除法错误中断的处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E5%8D%95%E6%AD%A5%E4%B8%AD%E6%96%AD"><span class="nav-number">2.5.</span> <span class="nav-text">5、单步中断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81int%E6%8C%87%E4%BB%A4"><span class="nav-number">2.6.</span> <span class="nav-text">6、int指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7%E3%80%81BIOS%E5%92%8CDOS%E6%89%80%E6%8F%90%E4%BE%9B%E7%9A%84%E4%B8%AD%E6%96%AD%E4%BE%8B%E7%A8%8B"><span class="nav-number">2.7.</span> <span class="nav-text">7、BIOS和DOS所提供的中断例程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E7%AB%AF%E5%8F%A3"><span class="nav-number">3.</span> <span class="nav-text">十二、端口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%AF%BB%E5%86%99"><span class="nav-number">3.1.</span> <span class="nav-text">1、端口的读写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81CMOS-RAM%E8%8A%AF%E7%89%87"><span class="nav-number">3.2.</span> <span class="nav-text">2、CMOS RAM芯片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81shl%E5%92%8Cshr%E6%8C%87%E4%BB%A4"><span class="nav-number">3.3.</span> <span class="nav-text">3、shl和shr指令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E4%B8%89%E3%80%81%E5%A4%96%E4%B8%AD%E6%96%AD"><span class="nav-number">4.</span> <span class="nav-text">十三、外中断</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E5%A4%96%E4%B8%AD%E6%96%AD"><span class="nav-number">4.1.</span> <span class="nav-text">1、外中断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81PC%E6%9C%BA%E9%94%AE%E7%9B%98%E7%9A%84%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B"><span class="nav-number">4.2.</span> <span class="nav-text">2、PC机键盘的处理过程</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -557,6 +384,21 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>

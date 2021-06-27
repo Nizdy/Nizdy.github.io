@@ -21,18 +21,58 @@
     var CONFIG = {"hostname":"nizdy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="(눈_눈)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nizdy&#39;s Blog">
-<meta property="og:url" content="https://nizdy.github.io/archives/index.html">
+  <meta name="description" content="BUUCTF   RE部分   第一题：  拖进IDA ，F5查看伪代码，发现flag。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BUUCTF REwp (1)">
+<meta property="og:url" content="https://nizdy.github.io/post/BUUCTF-REwp-1.html">
 <meta property="og:site_name" content="Nizdy&#39;s Blog">
-<meta property="og:description" content="(눈_눈)">
+<meta property="og:description" content="BUUCTF   RE部分   第一题：  拖进IDA ，F5查看伪代码，发现flag。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410165918262.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410170416088.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410171446015.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410171413725.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410174645104.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410175151508.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410175336618.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410180210611.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410180457460.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410180712560.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210410180210611.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410181222698.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410181447639.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410190243808.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410194523944.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410194814747.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410194714369.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410195200382.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410200838966.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410202105809.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410202149652.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410202239598.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410220411158.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410220010827.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411204514307.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411205523208.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411213919246.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411214520906.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411214959635.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411215110915.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411215305345.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411215353017.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411215455498.png">
+<meta property="og:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210411220623724.png">
+<meta property="article:published_time" content="2021-06-16T11:10:09.000Z">
+<meta property="article:modified_time" content="2021-06-27T05:04:54.814Z">
 <meta property="article:author" content="Nizdy">
-<meta property="article:tag" content="Blog, Notes, Nizdy">
+<meta property="article:tag" content="BUUCTF">
+<meta property="article:tag" content="逆向">
+<meta property="article:tag" content="RE">
+<meta property="article:tag" content="wp">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/gerenboke/blog/NizdyBlog/source_posts/BUUCTF-REwp-1/image-20210410165918262.png">
 
-<link rel="canonical" href="https://nizdy.github.io/archives/">
+<link rel="canonical" href="https://nizdy.github.io/post/BUUCTF-REwp-1.html">
 
 
 <script id="page-configurations">
@@ -40,12 +80,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Nizdy's Blog</title>
+  <title>BUUCTF REwp (1) | Nizdy's Blog</title>
   
 
 
@@ -159,216 +199,39 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 9 篇日志。 继续努力。</span>
-      </div>
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw==">
+<script type="text/javascript">
+   window.livereOptions = {
+       refer: 'mcxu233.com' + location.pathname
+   };
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+       if (typeof LivereTower === 'function') { return; }
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-24T19:10:09+08:00"
-              content="2021-06-24">
-          06-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-3.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (3)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-19T19:10:09+08:00"
-              content="2021-06-19">
-          06-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E3%80%8B%E7%AC%AC1%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《深入理解计算机系统》第1章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-2.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (2)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-1.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (1)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T20:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%8910-13%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)10-13章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T19:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%207-9%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)7-9章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%204-6%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)4-6章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%891-3%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)1-3章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-13T11:50:04+08:00"
-              content="2021-06-13">
-          06-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/hello-world.html" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
-  </div>
-  
-  
-  
-
-  
-
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -557,6 +420,21 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>

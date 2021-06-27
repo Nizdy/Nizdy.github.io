@@ -21,18 +21,21 @@
     var CONFIG = {"hostname":"nizdy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="(눈_눈)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nizdy&#39;s Blog">
-<meta property="og:url" content="https://nizdy.github.io/archives/index.html">
+  <meta name="description" content="七、数据处理的两个基本问题1、 bx、si、di和bp在8086CPU中，只有这4个寄存器可以用在“[…]”中来进行内存单元的寻址。 在[ ]中，这4个寄存器可以单个出现，或只能以4种组合出现：bx和si、bx和di、bp和si、bp和di。 只要在[……]中使用寄存器bp，而指令中没有显性地给出段地址, 段地址就默认在ss中 2、机器指令处理的数据在什么地方数据处理大致可分为3类：读取、写入、运">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《汇编语言》(王爽)7-9章笔记">
+<meta property="og:url" content="https://nizdy.github.io/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%207-9%E7%AB%A0%E7%AC%94%E8%AE%B0.html">
 <meta property="og:site_name" content="Nizdy&#39;s Blog">
-<meta property="og:description" content="(눈_눈)">
+<meta property="og:description" content="七、数据处理的两个基本问题1、 bx、si、di和bp在8086CPU中，只有这4个寄存器可以用在“[…]”中来进行内存单元的寻址。 在[ ]中，这4个寄存器可以单个出现，或只能以4种组合出现：bx和si、bx和di、bp和si、bp和di。 只要在[……]中使用寄存器bp，而指令中没有显性地给出段地址, 段地址就默认在ss中 2、机器指令处理的数据在什么地方数据处理大致可分为3类：读取、写入、运">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-15T11:10:09.000Z">
+<meta property="article:modified_time" content="2021-06-27T05:05:40.078Z">
 <meta property="article:author" content="Nizdy">
-<meta property="article:tag" content="Blog, Notes, Nizdy">
+<meta property="article:tag" content="汇编语言">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://nizdy.github.io/archives/">
+<link rel="canonical" href="https://nizdy.github.io/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%207-9%E7%AB%A0%E7%AC%94%E8%AE%B0.html">
 
 
 <script id="page-configurations">
@@ -40,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Nizdy's Blog</title>
+  <title>《汇编语言》(王爽)7-9章笔记 | Nizdy's Blog</title>
   
 
 
@@ -159,216 +162,39 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 9 篇日志。 继续努力。</span>
-      </div>
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw==">
+<script type="text/javascript">
+   window.livereOptions = {
+       refer: 'mcxu233.com' + location.pathname
+   };
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+       if (typeof LivereTower === 'function') { return; }
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-24T19:10:09+08:00"
-              content="2021-06-24">
-          06-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-3.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (3)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-19T19:10:09+08:00"
-              content="2021-06-19">
-          06-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E3%80%8B%E7%AC%AC1%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《深入理解计算机系统》第1章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-2.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (2)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-16T19:10:09+08:00"
-              content="2021-06-16">
-          06-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/BUUCTF-REwp-1.html" itemprop="url">
-            <span itemprop="name">BUUCTF REwp (1)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T20:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%8910-13%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)10-13章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-15T19:10:09+08:00"
-              content="2021-06-15">
-          06-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%207-9%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)7-9章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%20%20(%E7%8E%8B%E7%88%BD)%20%204-6%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)4-6章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-14T19:10:09+08:00"
-              content="2021-06-14">
-          06-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%8E%8B%E7%88%BD%EF%BC%891-3%E7%AB%A0%E7%AC%94%E8%AE%B0.html" itemprop="url">
-            <span itemprop="name">《汇编语言》(王爽)1-3章笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-13T11:50:04+08:00"
-              content="2021-06-13">
-          06-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/hello-world.html" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
-  </div>
-  
-  
-  
-
-  
-
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MzU3MC8zMDA0Mw=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -415,6 +241,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E4%B8%A4%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">七、数据处理的两个基本问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81-bx%E3%80%81si%E3%80%81di%E5%92%8Cbp"><span class="nav-number">1.1.</span> <span class="nav-text">1、 bx、si、di和bp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E6%9C%BA%E5%99%A8%E6%8C%87%E4%BB%A4%E5%A4%84%E7%90%86%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%B0%E6%96%B9"><span class="nav-number">1.2.</span> <span class="nav-text">2、机器指令处理的数据在什么地方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%AD%E6%95%B0%E6%8D%AE%E4%BD%8D%E7%BD%AE%E7%9A%84%E8%A1%A8%E8%BE%BE"><span class="nav-number">1.3.</span> <span class="nav-text">3、汇编语言中数据位置的表达</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E6%8C%87%E4%BB%A4%E8%A6%81%E5%A4%84%E7%90%86%E7%9A%84%E6%95%B0%E6%8D%AE%E6%9C%89%E5%A4%9A%E9%95%BF"><span class="nav-number">1.4.</span> <span class="nav-text">4、指令要处理的数据有多长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F%E7%9A%84%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">5、寻址方式的综合应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81div%E6%8C%87%E4%BB%A4%E3%80%81dd%E3%80%81dup%E3%80%81mul%E6%8C%87%E4%BB%A4"><span class="nav-number">1.6.</span> <span class="nav-text">6、div指令、dd、dup、mul指令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E8%BD%AC%E7%A7%BB%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8E%9F%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">八、转移指令的原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%93%8D%E4%BD%9C%E7%AC%A6offset"><span class="nav-number">2.1.</span> <span class="nav-text">1、操作符offset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81jmp%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.</span> <span class="nav-text">2、jmp指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%BE%9D%E6%8D%AE%E4%BD%8D%E7%A7%BB%E8%BF%9B%E8%A1%8C%E8%BD%AC%E7%A7%BB%E7%9A%84jmp%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.1.</span> <span class="nav-text">1、依据位移进行转移的jmp指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E8%BD%AC%E7%A7%BB%E7%9A%84%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9D%80%E5%9C%A8%E6%8C%87%E4%BB%A4%E4%B8%AD%E7%9A%84jmp%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.2.</span> <span class="nav-text">2、转移的目的地址在指令中的jmp指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%BD%AC%E7%A7%BB%E5%9C%B0%E5%9D%80%E5%9C%A8%E5%AF%84%E5%AD%98%E5%99%A8%E6%88%96%E5%86%85%E5%AD%98%E4%B8%AD%E7%9A%84jmp%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.3.</span> <span class="nav-text">3、转移地址在寄存器或内存中的jmp指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81jcxz%E6%8C%87%E4%BB%A4%E5%92%8Cloop%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.4.</span> <span class="nav-text">4、jcxz指令和loop指令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%9D%E3%80%81call%E5%92%8Cret%E6%8C%87%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">九、call和ret指令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81ret-%E5%92%8C-retf"><span class="nav-number">3.1.</span> <span class="nav-text">1、ret 和 retf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81call-%E6%8C%87%E4%BB%A4"><span class="nav-number">3.2.</span> <span class="nav-text">2、call 指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81call-%E5%92%8C-ret-%E7%9A%84%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8"><span class="nav-number">3.3.</span> <span class="nav-text">3、call 和 ret 的配合使用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -557,6 +384,21 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
